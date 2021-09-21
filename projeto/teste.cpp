@@ -8,7 +8,7 @@
  char email [SIZE][50];
  char sexo [SIZE][50];
  char endereco [SIZE][50];
-    double altura [SIZE];
+ double altura [SIZE];
 
  
 
