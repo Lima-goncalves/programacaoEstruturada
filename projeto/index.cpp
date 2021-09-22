@@ -1,44 +1,61 @@
+#include<stdio.h>
+#include<string.h>
 
- #include<stdio.h>
- #define SIZE 200
- char nome [SIZE][50];
- char email [SIZE][50];
- char sexo [SIZE][50];
- char endereco [SIZE][50];
+double validarAltura(double alturaValidar);
+int icluirUsuario(double *altura, double alturaValidar,int indice)
 
- int op;
+int main (void){
 
- void cadastro ();
-
-    int  main (void){
-
-        cadastro ();
+    double altura[5];
+    double alturaValidar
+    char sexo[5][20];
+    int indice=0
+    indice=incluirUsuario(altura,alturaValidar,indice);
 
 
-
-        return 0; 
+}
+/*  altura */
+double validarAltura(double alturaValidar){
+   
+   do
+   {
+    printf("\ndigite a altura");
+    scanf("%lf", &alturaValidar);
+    if (alturaValidar< 1 || alturaValidar>2)
+    {
+    printf("ALTURA INVALIDA,CERTIFIQUE-SE QUE A ALTURA ESTEJA ENTRE 1 a 2 ");
     }
-
     
-    void cadastro (){
-        static int linha;
-        do
-        {
-            printf("\nDigite o nome: ");
-            scanf("%s", &nome[linha]);
+   } while (alturaValidar<1 or alturaValidar>2);
+   
+
+
+
+return alturaValidar;
+}
+/*  altura */
 
 
 
 
 
 
-            printf("\n digite 1 para continuar ou outro valor para repetir ");
-            scanf("%d",&op);
-            linha++;
-        } while (op==1);
-        
 
 
 
 
-    }
+/*  INCLUIR USUARIO  */
+int icluirUsuario(double *altura, double alturaValidar,int indice)
+{int op=1
+    do
+    {
+     altura[indice]= validarAltura(alturaVlidar);
+    printf("\ndeseja incluir mais um usuario?\nsim:digite 1\n nao:digite 0");
+    scanf("%d",&op);
+    indice++
+    } while (op==1);
+    
+   return indice;
+}
+
+/*  INCLUIR USUARIO  */
